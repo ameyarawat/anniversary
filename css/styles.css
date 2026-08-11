@@ -504,9 +504,9 @@ body.home-page .navbar.scrolled {
   opacity: 0.05;
 }
 
-/* Reveal layer — 40% visible on other pages when cursor moves */
+/* Reveal layer — 42% visible on other pages when cursor moves */
 .collage-reveal {
-  opacity: 0.40;
+  opacity: 0.42;
   --mx: -300px;
   --my: -300px;
   -webkit-mask-image: radial-gradient(
@@ -527,13 +527,13 @@ body.home-page .navbar.scrolled {
   will-change: mask-image, -webkit-mask-image;
 }
 
-/* Homepage specific: 1% base background, 50% spotlight reveal */
+/* Homepage specific: 1% base background, 55% spotlight reveal */
 .home-page .collage-base {
   opacity: 0.01;
 }
 
 .home-page .collage-reveal {
-  opacity: 0.50;
+  opacity: 0.55;
 }
 
 /* Responsive: 3-column on tablet, 2-column on mobile */
