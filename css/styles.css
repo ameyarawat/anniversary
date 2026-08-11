@@ -285,16 +285,25 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--space-xl);
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
+  background: rgba(255, 245, 247, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   z-index: 1000;
   transition: var(--transition-base);
 }
 
 .navbar.scrolled {
+  background: rgba(255, 245, 247, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Homepage navbar remains 100% transparent without blur */
+body.home-page .navbar,
+body.home-page .navbar.scrolled {
   background: transparent !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
