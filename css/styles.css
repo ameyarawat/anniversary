@@ -323,8 +323,9 @@ body.home-page .navbar.scrolled {
 
 .nav-brand .heart-icon {
   display: inline-block;
+  font-size: 1.5em;
   padding-right: 6px;
-  line-height: 1.2;
+  line-height: 1;
   overflow: visible;
   animation: heartPulse 1.2s ease-in-out infinite;
 }
@@ -498,12 +499,12 @@ body.home-page .navbar.scrolled {
   display: block;
 }
 
-/* Base layer — ghostly faded, always visible */
+/* Base layer — ghostly faded, 1% visible in background */
 .collage-base {
-  opacity: 0.05;
+  opacity: 0.01;
 }
 
-/* Reveal layer — brighter, masked to cursor spotlight */
+/* Reveal layer — 40% visible on other pages when cursor moves */
 .collage-reveal {
   opacity: 0.40;
   --mx: -300px;
@@ -524,6 +525,11 @@ body.home-page .navbar.scrolled {
   );
   transition: opacity 0.3s ease;
   will-change: mask-image, -webkit-mask-image;
+}
+
+/* 50% visible on homepage when cursor moves */
+.home-page .collage-reveal {
+  opacity: 0.50;
 }
 
 /* Responsive: 3-column on tablet, 2-column on mobile */
