@@ -206,21 +206,37 @@
       <div class="heart-divider" style="margin-top: 2.5rem;">🎬</div>
 
       <div class="page-header" style="margin-bottom: 1.5rem;">
-        <h2>Our Special Video 🎥</h2>
-        <p class="subtitle">A moment frozen in time, playing on loop, just for us...</p>
+        <h2>Our Special Videos 🎥</h2>
+        <p class="subtitle">Moments frozen in time, playing on loop, just for us...</p>
       </div>
 
-      <div class="video-frame">
-        <div class="video-frame-border">
-          <div class="video-frame-hearts">
-            <span>💗</span>
-            <span>💕</span>
-            <span>💗</span>
+      <div class="video-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto 2.5rem;">
+        <div class="video-frame" style="margin: 0;">
+          <div class="video-frame-border">
+            <div class="video-frame-hearts">
+              <span>💗</span>
+              <span>💕</span>
+              <span>💗</span>
+            </div>
+            <video autoplay loop muted playsinline controls>
+              <source src="images/video-1.mp4" type="video/mp4">
+            </video>
+            <p class="video-caption">Us, forever on loop 💗♾️</p>
           </div>
-          <video autoplay loop muted playsinline>
-            <source src="images/video-1.mp4" type="video/mp4">
-          </video>
-          <p class="video-caption">Us, forever on loop 💗♾️</p>
+        </div>
+
+        <div class="video-frame" style="margin: 0;">
+          <div class="video-frame-border">
+            <div class="video-frame-hearts">
+              <span>💖</span>
+              <span>✨</span>
+              <span>💖</span>
+            </div>
+            <video autoplay loop muted playsinline controls>
+              <source src="images/Shagun1.mp4" type="video/mp4">
+            </video>
+            <p class="video-caption">Meri Shagun 🌸✨</p>
+          </div>
         </div>
       </div>
 
