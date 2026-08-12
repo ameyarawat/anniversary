@@ -26,14 +26,18 @@ function initLetter() {
       envelope.classList.add('opened');
       letterPaper.classList.add('revealed');
 
-      // Scroll to letter smoothly
+      // Scroll smoothly to the beginning of the letter (accounting for fixed navbar)
       setTimeout(() => {
-        letterPaper.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+        const navHeight = 90; // Fixed navbar height (70px) + comfortable breathing margin
+        const letterTop = letterPaper.getBoundingClientRect().top + window.pageYOffset;
+        const targetScroll = Math.max(0, letterTop - navHeight);
+
+        window.scrollTo({
+          top: targetScroll,
+          behavior: 'smooth'
         });
       }, 300);
-    }, 800);
+    }, 700);
   });
 
   // Add floating heart decorations around the letter when revealed

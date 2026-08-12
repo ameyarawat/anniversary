@@ -1267,6 +1267,7 @@ body.home-page .navbar.scrolled {
 
 /* Letter Paper */
 .letter-paper {
+  scroll-margin-top: 90px;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
