@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCursorParticles();
   initCollageSpotlight();
   initHeartWebCanvas();
+  initVideoAudioController();
 });
 
 /* ===== NAVIGATION ===== */
@@ -463,3 +464,138 @@ function initHeartWebCanvas() {
 
   animate();
 }
+
+/* ===== SCROLL-BASED VIDEO AUDIO CONTROLLER ===== */
+function initVideoAudioController() {
+  const videos = document.querySelectorAll('video');
+  if (!videos.length) return;
+
+  const visibilityMap = new Map();
+  let userInteracted = false;
+
+  // Track user interaction to handle browser autoplay policies
+  const handleUserInteraction = () => {
+    userInteracted = true;
+    updateVideoAudio();
+  };
+
+  ['click', 'touchstart', 'pointerdown', 'keydown', 'scroll'].forEach(evt => {
+    window.addEventListener(evt, handleUserInteraction, { passive: true, capture: true });
+  });
+
+  function updateVideoAudio() {
+    if (document.hidden) {
+      videos.forEach(v => {
+        v.muted = true;
+        updateBadge(v, false, 'hidden');
+      });
+      return;
+    }
+
+    // Determine which video is most visible in viewport
+    let maxRatio = 0;
+    let primaryVideo = null;
+
+    visibilityMap.forEach((ratio, video) => {
+      if (ratio > maxRatio && ratio >= 0.35) {
+        maxRatio = ratio;
+        primaryVideo = video;
+      }
+    });
+
+    videos.forEach(video => {
+      if (video === primaryVideo) {
+        // Unmute audio when user is seeing the video
+        video.muted = false;
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              updateBadge(video, true);
+            })
+            .catch(err => {
+              // If unmuting blocked by browser policy until click
+              video.muted = true;
+              video.play().catch(() => {});
+              updateBadge(video, false, 'tap');
+            });
+        } else {
+          updateBadge(video, !video.muted);
+        }
+      } else {
+        // Mute video when not seeing it / out of view
+        video.muted = true;
+        updateBadge(video, false, 'out');
+      }
+    });
+  }
+
+  function createOrGetBadge(video) {
+    const container = video.closest('.video-frame-border') || video.parentElement;
+    if (!container) return null;
+
+    if (getComputedStyle(container).position === 'static') {
+      container.style.position = 'relative';
+    }
+
+    let badge = container.querySelector('.video-audio-badge');
+    if (!badge) {
+      badge = document.createElement('button');
+      badge.className = 'video-audio-badge';
+      badge.setAttribute('type', 'button');
+      badge.setAttribute('aria-label', 'Toggle Video Sound');
+      container.appendChild(badge);
+
+      const toggleMute = (e) => {
+        e.stopPropagation();
+        userInteracted = true;
+        video.muted = !video.muted;
+        if (!video.muted) {
+          video.play().catch(() => {});
+        }
+        updateBadge(video, !video.muted);
+      };
+
+      badge.addEventListener('click', toggleMute);
+      video.addEventListener('click', toggleMute);
+    }
+    return badge;
+  }
+
+  function updateBadge(video, isPlayingSound, reason) {
+    const badge = createOrGetBadge(video);
+    if (!badge) return;
+
+    if (isPlayingSound && !video.muted) {
+      badge.classList.add('active');
+      badge.innerHTML = '🔊 Sound On';
+    } else if (reason === 'tap') {
+      badge.classList.remove('active');
+      badge.innerHTML = '🔇 Tap for Sound';
+    } else {
+      badge.classList.remove('active');
+      badge.innerHTML = '🔇 Muted';
+    }
+  }
+
+  // Use IntersectionObserver to track video visibility on screen
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        visibilityMap.set(entry.target, entry.isIntersecting ? entry.intersectionRatio : 0);
+      });
+      updateVideoAudio();
+    },
+    {
+      threshold: [0, 0.1, 0.25, 0.35, 0.5, 0.75, 1.0]
+    }
+  );
+
+  videos.forEach(video => {
+    createOrGetBadge(video);
+    observer.observe(video);
+  });
+
+  document.addEventListener('visibilitychange', updateVideoAudio);
+}
+
