@@ -1037,6 +1037,48 @@ body.home-page .navbar.scrolled {
   text-align: center;
 }
 
+/* Video Audio Badge */
+.video-audio-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(233, 30, 99, 0.3);
+  color: #c2185b;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  user-select: none;
+  font-family: inherit;
+}
+
+.video-audio-badge:hover {
+  background: rgba(255, 255, 255, 0.98);
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.25);
+}
+
+.video-audio-badge.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+  animation: audioBadgePulse 2s infinite;
+}
+
+@keyframes audioBadgePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(233, 30, 99, 0); }
+}
+
 /* Lightbox */
 .lightbox {
   position: fixed;
