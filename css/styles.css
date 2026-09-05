@@ -1849,3 +1849,173 @@ body.home-page .navbar.scrolled {
 .mb-1 { margin-bottom: var(--space-md); }
 .mb-2 { margin-bottom: var(--space-xl); }
 
+/* ===== VAULT UNLOCK UI ===== */
+.vault-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.vault-unlock-trigger {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--accent-light);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+}
+
+.vault-unlock-trigger:hover {
+  background: var(--accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.vault-unlock-trigger.unlocked {
+  background: rgba(76, 175, 80, 0.15);
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.vault-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.vault-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.vault-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 17, 44, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.vault-modal-card {
+  position: relative;
+  width: 90%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 143, 177, 0.5);
+  border-radius: var(--radius-lg);
+  padding: 2.2rem 2rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.vault-modal.active .vault-modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.vault-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.vault-modal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  animation: heartPulse 1.5s infinite;
+}
+
+.vault-modal-card h3 {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.vault-modal-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#vault-passcode-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid var(--accent-light);
+  border-radius: var(--radius-md);
+  outline: none;
+  font-family: inherit;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+
+#vault-passcode-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.vault-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px var(--accent-glow);
+  transition: all 0.25s ease;
+}
+
+.vault-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--accent-glow);
+}
+
+.vault-error-msg {
+  color: #e53935 !important;
+  font-size: 0.9rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+@keyframes vaultBurst {
+  0% { transform: scale(0.5); opacity: 1; }
+  100% { transform: translateY(-80px) scale(1.5); opacity: 0; }
+}
+
+.shake {
+  animation: shakeAnim 0.5s ease-in-out;
+}
+
+@keyframes shakeAnim {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-8px); }
+  40%, 80% { transform: translateX(8px); }
+}
+
