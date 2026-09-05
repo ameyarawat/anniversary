@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g18)"/>
+  <path d="M300 270 C240 180 140 180 140 270 C140 360 240 360 300 270 C360 180 460 180 460 270 C460 360 360 360 300 270 Z" fill="none" stroke="#f48fb1" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="drop-shadow(0 8px 18px rgba(233,30,99,0.2))"/>
+  <text x="130" y="285" font-size="36" text-anchor="middle">🌸</text>
+  <text x="210" y="200" font-size="30" text-anchor="middle">🌺</text>
+  <text x="210" y="350" font-size="30" text-anchor="middle">🌷</text>
+  <text x="300" y="285" font-size="42" text-anchor="middle">💗</text>
+  <text x="390" y="200" font-size="30" text-anchor="middle">🌸</text>
+  <text x="390" y="350" font-size="30" text-anchor="middle">🌺</text>
+  <text x="470" y="285" font-size="36" text-anchor="middle">🌹</text>
+  <text x="300" y="490" font-family="'Dancing Script', cursive, sans-serif" font-size="34" font-weight="bold" fill="#ad1457" text-anchor="middle">Forever & Ever ♾️🌸</text>
+</svg>

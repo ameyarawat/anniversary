@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0926"/>
+      <stop offset="50%" stop-color="#4a154b"/>
+      <stop offset="100%" stop-color="#880e4f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff59d"/>
+      <stop offset="40%" stop-color="#ffb74d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff7043" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g11)"/>
+  <circle cx="300" cy="260" r="160" fill="url(#glow)"/>
+  <path d="M240 210 Q300 170 360 210 L350 330 Q300 350 250 330 Z" fill="#ffe082" stroke="#ffb300" stroke-width="3" filter="drop-shadow(0 0 20px #ffb300)"/>
+  <ellipse cx="300" cy="330" rx="50" ry="12" fill="#ff8f00"/>
+  <text x="300" y="275" font-size="42" text-anchor="middle" fill="#e91e63">💗</text>
+  <circle cx="140" cy="150" r="16" fill="#ffcc80" opacity="0.6"/>
+  <circle cx="460" cy="120" r="12" fill="#ffcc80" opacity="0.5"/>
+  <text x="300" y="500" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#ffe0b2" text-anchor="middle">Light That Guides Us Home 🏮✨</text>
+</svg>

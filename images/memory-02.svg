@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g2)"/>
+  <rect x="130" y="180" width="340" height="240" rx="16" fill="#ffffff" stroke="#f48fb1" stroke-width="4" filter="drop-shadow(0 12px 24px rgba(233,30,99,0.15))"/>
+  <path d="M130 180 L300 310 L470 180" fill="none" stroke="#f48fb1" stroke-width="3" stroke-linecap="round"/>
+  <rect x="160" y="130" width="280" height="150" rx="8" fill="#fffafc" stroke="#e8a0bf" stroke-width="2"/>
+  <line x1="190" y1="160" x2="350" y2="160" stroke="#f06292" stroke-width="2" stroke-linecap="round"/>
+  <line x1="190" y1="185" x2="410" y2="185" stroke="#f48fb1" stroke-width="2" stroke-linecap="round"/>
+  <line x1="190" y1="210" x2="320" y2="210" stroke="#f48fb1" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="300" cy="310" r="32" fill="#e91e63" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.2))"/>
+  <text x="300" y="318" font-size="24" text-anchor="middle" fill="#ffffff">💌</text>
+  <text x="420" y="380" font-size="48">🌹</text>
+  <text x="160" y="370" font-size="36">✨</text>
+  <text x="300" y="500" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#c2185b" text-anchor="middle">Every Word from the Heart 💌</text>
+</svg>

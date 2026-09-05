@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6f0"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g5)"/>
+  <ellipse cx="300" cy="350" rx="140" ry="35" fill="#ffffff" stroke="#f48fb1" stroke-width="4" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.08))"/>
+  <path d="M210 240 L230 330 Q300 360 370 330 L390 240 Z" fill="#ffffff" stroke="#f48fb1" stroke-width="4"/>
+  <path d="M390 255 C425 255 425 305 385 310" fill="none" stroke="#f48fb1" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="300" cy="245" rx="80" ry="22" fill="#8d6e63"/>
+  <path d="M300 248 C290 238 275 238 275 248 C275 256 300 264 300 264 C300 264 325 256 325 248 C325 238 310 238 300 248 Z" fill="#ffffff"/>
+  <text x="280" y="190" font-size="24" opacity="0.7">💭</text>
+  <text x="310" y="160" font-size="28" opacity="0.8">💗</text>
+  <text x="300" y="460" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#6d2b5e" text-anchor="middle">Warmth in Every Moment ☕💕</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbf7"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g16)"/>
+  <g transform="translate(300, 260)">
+    <ellipse cx="-55" cy="-15" rx="55" ry="35" fill="#f48fb1" transform="rotate(-15)" filter="drop-shadow(0 8px 16px rgba(233,30,99,0.2))"/>
+    <ellipse cx="55" cy="-15" rx="55" ry="35" fill="#f48fb1" transform="rotate(15)" filter="drop-shadow(0 8px 16px rgba(233,30,99,0.2))"/>
+    <circle cx="0" cy="-5" r="22" fill="#e91e63"/>
+    <path d="M-12 10 Q-40 80 -60 110 L-30 105 Q-10 60 0 15 Z" fill="#ec407a"/>
+    <path d="M12 10 Q40 80 60 110 L30 105 Q10 60 0 15 Z" fill="#ec407a"/>
+  </g>
+  <text x="300" y="240" font-size="24" text-anchor="middle" fill="#ffffff">✨</text>
+  <text x="300" y="470" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#c2185b" text-anchor="middle">Tied Together By Love 🎀</text>
+</svg>

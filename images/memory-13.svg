@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="100%" stop-color="#ffebee"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g13)"/>
+  <text x="200" y="290" font-size="70" text-anchor="middle">🤙</text>
+  <g transform="translate(400,290) scale(-1, 1)">
+    <text x="0" y="0" font-size="70" text-anchor="middle">🤙</text>
+  </g>
+  <path d="M230 270 Q270 230 300 240 Q330 250 370 270" fill="none" stroke="#e53935" stroke-width="4" stroke-linecap="round"/>
+  <path d="M300 240 C290 220 270 220 270 235 C270 250 300 265 300 265 C300 265 330 250 330 235 C330 220 310 220 300 240 Z" fill="#e53935"/>
+  <text x="300" y="170" font-size="36" text-anchor="middle">✨</text>
+  <text x="300" y="460" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#c62828" text-anchor="middle">The Red Thread of Destiny 🪢❤️</text>
+</svg>

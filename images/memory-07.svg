@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5f5"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g7)"/>
+  <path d="M100 400 Q200 480 320 360 T480 180" fill="none" stroke="#f48fb1" stroke-width="4" stroke-dasharray="8 8"/>
+  <g transform="translate(460, 160) rotate(-25)">
+    <polygon points="0,0 80,40 20,45 0,70" fill="#ffffff" stroke="#e91e63" stroke-width="3" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.1))"/>
+    <polygon points="0,0 80,40 20,45" fill="#fce4ec"/>
+  </g>
+  <text x="160" y="410" font-size="24">💗</text>
+  <text x="260" y="390" font-size="28">💖</text>
+  <text x="360" y="300" font-size="32">💓</text>
+  <text x="480" y="260" font-size="22">✨</text>
+  <text x="300" y="510" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#880e4f" text-anchor="middle">Flying Straight To You ✈️💌</text>
+</svg>

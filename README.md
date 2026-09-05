@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎀 𝐻𝒶𝓅𝓅𝓎 𝟣𝓈𝓉 𝒜𝓃𝓃𝒾𝓋𝑒𝓇𝓈𝒶𝓇𝓎 — 𝐹𝑜𝓇 𝒮𝒽𝒶𝑔𝓊𝓃 💗
+# 🎀 𝐻𝒶𝓅𝓅𝓎 𝟣𝓈𝓉 𝒜𝓃𝓃𝒾𝓋𝑒𝓇𝓈𝒶𝓇𝓎 — 𝐹𝑜𝓇𝑒𝓋𝑒𝓇 & 𝒜𝓁𝓌𝒶𝓎𝓈 💗
 
   <p align="center">
     <strong>🌸 A Pinterest-Inspired Soft Girl & Love-Themed Digital Memory Box 🌸</strong>
@@ -33,7 +33,7 @@
 </div>
 
 <blockquote align="center">
-  <i>"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</i> — <strong>For Shagun</strong> 💖
+  <i>"In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine."</i> — <strong>Forever & Always</strong> 💖
 </blockquote>
 
 <br />
@@ -52,14 +52,14 @@
 
 ## 💗 About The Project
 
-**For Shagun** is a bespoke, interactive 1st Anniversary web experience designed to capture sweet moments, timeline milestones, secret love letters, and adorable sticky notes. Built completely from scratch using modern web technologies and glassmorphic aesthetic design, it turns digital memories into an enchanting, romantic journey.
+**Forever & Always** is a bespoke, interactive 1st Anniversary web experience designed to capture sweet moments, timeline milestones, secret love letters, and adorable sticky notes. Built completely from scratch using modern web technologies and glassmorphic aesthetic design, it turns digital memories into an enchanting, romantic journey.
 
 ### 🌟 Key Highlights
 * **💖 100% Custom Visual Design**: Soft girl pastel palette (`#FFF5F7` to `#E91E63`) with glassmorphism and subtle rose-gold accents.
 * **🕸️ Interactive Heart Web Canvas**: Physics-inspired floating heart particles that react to cursor movement and create constellation bonds.
-* **🔦 Spotlight Photo Background**: Dual-layer photo collage that reveals memories with a soft glowing spotlight as the cursor glides across the screen.
+* **🔦 Spotlight Memory Background**: Dual-layer memory illustration collage that reveals memories with a soft glowing spotlight as the cursor glides across the screen.
 * **💌 Envelope & Wax Seal Love Letter**: Fully interactive letter with a breaking wax seal, unfolding envelope, typewriter text animation, secret note toggle, and background music player.
-* **📸 Polaroid Memory Gallery**: Filterable photo gallery styled like physical polaroids with hover tilt effects and lightbox modal.
+* **📸 Polaroid Memory Gallery**: Interactive memory gallery styled like physical polaroids with hover tilt effects and lightbox modal.
 * **📝 Drag & Flip Cute Sticky Notes**: Digital love notes, compliments, and affirmations that can be flipped and interacted with.
 * **🎆 Celebration Fireworks**: Interactive confetti, romantic countdown timer, and warm closing wish section.
 
@@ -85,7 +85,7 @@ The visual style is built upon a carefully curated Pinterest-inspired palette:
 
 | Page | Title & Icon | Features & Highlights |
 | :--- | :--- | :--- |
-| **`index.html`** | 🏠 **Home Page** | Dynamic heart web canvas, interactive spotlight photo collage reveal, hero pulsating heart, sound toggle. |
+| **`index.html`** | 🏠 **Home Page** | Dynamic heart web canvas, interactive spotlight memory collage reveal, hero pulsating heart, sound toggle. |
 | **`our-story.html`** | 📖 **Our Story** | Romantic timeline of special milestones, memory cards, ribbon markers 🎀, and first-meet memories. |
 | **`gallery.html`** | 🖼️ **Memory Gallery** | Filterable Polaroid gallery with categories (Dates, Trips, Cute Moments), tilt hover, and lightbox overlay. |
 | **`letter.html`** | 💌 **The Love Letter** | 3D envelope with interactive wax seal 🏵️, smooth opening animation, typewriter message effect & ambient audio. |
@@ -112,8 +112,8 @@ This project is built using pure, high-performance web standards without externa
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/shagun-anniversary.git
-cd shagun-anniversary
+git clone https://github.com/your-username/anniversary.git
+cd anniversary
 ```
 
 ### 2️⃣ Preview Locally
@@ -130,7 +130,7 @@ Then open `http://localhost:8000` in your browser. 🌸
 ## 📁 File Structure
 
 ```
-Shagun/
+anniversary/
 ├── 📄 index.html          # Homepage with interactive heart canvas & spotlight background
 ├── 📄 our-story.html      # Romantic timeline & milestones page
 ├── 📄 gallery.html        # Polaroid style memory gallery with lightbox
@@ -145,26 +145,26 @@ Shagun/
 │   ├── 🖼️ gallery.js       # Category filters & lightbox viewer
 │   ├── 📝 notes.js         # Interactive flip notes & sticker sounds
 │   └── 🎆 closing.js       # Celebration confetti & memory counter
-└── 📂 images/             # Memories & photo collage images
+└── 📂 images/             # Vector memory illustrations & animations
 ```
 
 ---
 
 ## 🎀 Customization & Personalization
 
-Want to use this template for your own special someone? Here is how to personalize it:
+Want to use this template for your own celebration? Here is how to personalize it:
 
-1. **📷 Photos**: Replace images in the `images/` directory with your own photos (`photo-1.jpeg` through `photo-18.jpeg`).
+1. **📷 Memories**: Customize or replace SVGs in the `images/` directory with your own illustrations or photos.
 2. **💌 Love Letter**: Edit the text inside `letter.html` in the `.letter-body` container.
 3. **📖 Story Timeline**: Customize milestones and dates in `our-story.html`.
 4. **📝 Sticky Notes**: Add or modify compliments in `cute-notes.html`.
-5. **🎵 Music**: Add your favorite romantic song into `images/` or `audio/` and link it inside `letter.html`.
+5. **🎵 Audio**: Add romantic ambient audio into `images/` or `audio/` and link it inside `letter.html`.
 
 ---
 
 <div align="center">
 
-### 🎀 Made with endless love for Shagun 🎀
+### 🎀 Made with endless love — Forever & Always 🎀
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="300" alt="Cute Hearts GIF" />

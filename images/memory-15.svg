@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g15" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="100%" stop-color="#fce4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g15)"/>
+  <rect x="180" y="230" width="90" height="110" rx="16" fill="#f48fb1" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.1))"/>
+  <path d="M180 250 C150 250 150 310 180 310" fill="none" stroke="#f48fb1" stroke-width="8" stroke-linecap="round"/>
+  <text x="225" y="295" font-size="32" text-anchor="middle">👑</text>
+  <rect x="330" y="230" width="90" height="110" rx="16" fill="#e91e63" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.1))"/>
+  <path d="M420 250 C450 250 450 310 420 310" fill="none" stroke="#e91e63" stroke-width="8" stroke-linecap="round"/>
+  <text x="375" y="295" font-size="32" text-anchor="middle">🤍</text>
+  <text x="300" y="180" font-size="48" text-anchor="middle" fill="#ec407a">💗</text>
+  <text x="300" y="460" font-family="'Dancing Script', cursive, sans-serif" font-size="32" font-weight="bold" fill="#880e4f" text-anchor="middle">Perfect Pair, Always ☕✨</text>
+</svg>
