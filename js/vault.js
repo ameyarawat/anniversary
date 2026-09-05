@@ -196,6 +196,10 @@ function applyPersonalContent(data) {
     if (msgHead && data.closing_heading) msgHead.textContent = data.closing_heading;
     const sig = document.querySelector('.final-heart-container p:last-child');
     if (sig && data.closing_signature) sig.textContent = data.closing_signature;
+    // Start the days-together counter with encrypted date
+    if (data.closing_date && window.startClosingCounter) {
+      window.startClosingCounter(data.closing_date);
+    }
   }
 }
 

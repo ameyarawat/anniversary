@@ -1,15 +1,25 @@
 /* ============================================================
    CLOSING.JS — Days counter & heart burst animation
+   Counter only starts after vault unlock (date comes from vault)
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initCounter();
   initHeartBurst();
 });
 
-/* ===== DAYS TOGETHER COUNTER ===== */
-function initCounter() {
-  const startDate = new Date('2025-08-12T00:00:00');
+/* ===== DAYS TOGETHER COUNTER (vault-driven) ===== */
+// Called by vault.js after successful unlock with the date from encrypted content
+window.startClosingCounter = function(dateString) {
+  const startDate = new Date(dateString);
+  if (isNaN(startDate.getTime())) return;
+
+  // Show counter boxes, hide locked message
+  const boxes = document.getElementById('counter-boxes');
+  const lockedMsg = document.getElementById('counter-locked-msg');
+  const title = document.querySelector('.counter-title');
+  if (boxes) boxes.style.display = '';
+  if (lockedMsg) lockedMsg.style.display = 'none';
+  if (title) title.textContent = "We've Been Together For...";
 
   function updateCounter() {
     const now = new Date();
@@ -31,10 +41,9 @@ function initCounter() {
     if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
   }
 
-  // Update immediately and then every second
   updateCounter();
   setInterval(updateCounter, 1000);
-}
+};
 
 /* ===== HEART BURST ANIMATION ===== */
 function initHeartBurst() {
